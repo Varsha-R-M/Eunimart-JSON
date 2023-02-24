@@ -1,0 +1,124 @@
+@import url("https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.hdd {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #5e4a15;
+  font-size: 400%;
+  /* bottom:650px;
+    right: 300px; */
+}
+/* .hdd:hover {
+  color: green;
+}  */
+.main {
+  padding: 3%;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #edd1a3;
+  background-color: #e2d7bf;
+}
+
+.box {
+  margin: auto;
+  width: 300px;
+  border-bottom: 20px solid rgb(145, 132, 103);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.box h2 {
+  color: #fff;
+  background: rgb(139, 127, 99);
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 700;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.box ul {
+  position: relative;
+  background: #fff;
+}
+.box ul li {
+  list-style: none;
+  padding: 10px;
+  width: 100%;
+  background: rgb(209 194 160);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s;
+}
+.box ul li:hover {
+  transform: scale(1.1);
+  z-index: 100;
+  background: #fbdb89;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  color: #fec5c5;
+}
+.box ul li span {
+  width: 10px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  background: #614a2b;
+  color: #fddfbb;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  transform: translateY(-20px);
+}
+.box ul li:hover span {
+}
+/* .box ul:hover {
+  opacity: 0.7;
+} */
+.neon-button {
+  background-color: transparent;
+  border: 2px solid #7e6666;
+  color: #332e2e;
+  font-size: 18px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  overflow: hidden;
+}
+
+.neon-button:before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: rotate(45deg);
+  transition: all 0.8s;
+  opacity: 0;
+}
+
+.neon-button:hover:before {
+  opacity: 1;
+  top: -30%;
+  left: -30%;
+}
+
+.neon-button:hover {
+  color: #333;
+  border-color: #333;
+  transition: all 0.2s;
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #ff00de,
+    0 0 80px #ff00de, 0 0 90px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+}
